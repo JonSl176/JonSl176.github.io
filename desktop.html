@@ -1,100 +1,90 @@
 <!doctype html>
 <html>
-    <head>
+   <head>
+      <meta charset="utf-8">
+      <title>Início de Computador</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
 
-      <head>
-    <meta charset="utf-8">
-    <title>Início de Computador</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        /* Estilos como descrito acima */
-    </style>
-    </head>
+         .desktop {
+            background-color: #fff;
+            width: 70%;
+            height: 70%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+         }
 
-      
-        <meta charset="utf-8">
-        <title>Início de Computador</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #e0e0e0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
+         .desktop h1 {
+            margin-bottom: 20px;
+         }
 
-            .desktop {
-                background-color: #fff;
-                width: 70%;
-                height: 70%;
-                border-radius: 10px;
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-            }
+         .icons-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+         }
 
-            .desktop h1 {
-                margin-bottom: 20px;
-            }
+         .icon {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+         }
 
-            .icons-container {
-                display: flex;
-                justify-content: space-around;
-                width: 100%;
-                flex-wrap: wrap;
-            }
+         .icon:hover {
+            background-color: #45a049;
+         }
 
-            .icon {
-                width: 100px;
-                height: 100px;
-                background-color: #4CAF50;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin: 10px;
-                border-radius: 8px;
-                text-decoration: none;
-                font-size: 16px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                transition: background-color 0.3s ease;
-            }
+         .icon i {
+            font-size: 30px;
+         }
+      </style>
+   </head>
+   <body>
 
-            .icon:hover {
-                background-color: #45a049;
-            }
+      <div class="desktop">
+         <h1>Início de Computador</h1>
+         <div class="icons-container">
+            <a href="#" class="icon">
+               <i class="fa fa-folder"></i> <!-- Ícone de pasta -->
+               Pasta
+            </a>
+            <a href="#" class="icon">
+               <i class="fa fa-cogs"></i> <!-- Ícone de configurações -->
+               Configurações
+            </a>
+            <a href="#" class="icon">
+               <i class="fa fa-user"></i> <!-- Ícone de usuário -->
+               Usuário
+            </a>
+         </div>
+      </div>
 
-            .icon i {
-                font-size: 30px;
-            }
-        </style>
-    </head>
-    <body>
-
-        <div class="desktop">
-            <h1>Início de Computador</h1>
-            <div class="icons-container">
-                <a href="#" class="icon">
-                    <i class="fa fa-folder"></i> <!-- Ícone de pasta (se usar FontAwesome) -->
-                    Pasta
-                </a>
-                <a href="#" class="icon">
-                    <i class="fa fa-cogs"></i> <!-- Ícone de configurações -->
-                    Configurações
-                </a>
-                <a href="#" class="icon">
-                    <i class="fa fa-user"></i> <!-- Ícone de usuário -->
-                    Usuário
-                </a>
-            </div>
-        </div>
-
-    </body>
+   </body>
 </html>
