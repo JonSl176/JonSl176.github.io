@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
    <head>
       <meta charset="utf-8">
       <title>Início de Computador</title>
@@ -18,8 +18,8 @@
 
          .desktop {
             background-color: #fff;
-            width: 70%;
-            height: 70%;
+            width: 80%;
+            height: 80%;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -27,6 +27,7 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+            overflow: auto;
          }
 
          .desktop h1 {
@@ -41,8 +42,8 @@
          }
 
          .icon {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             background-color: #4CAF50;
             color: white;
             display: flex;
@@ -64,6 +65,20 @@
          .icon i {
             font-size: 30px;
          }
+
+         /* Ajuste de responsividade */
+         @media screen and (max-width: 768px) {
+            .desktop {
+               width: 90%;
+               height: 90%;
+            }
+
+            .icon {
+               width: 80px;
+               height: 80px;
+               font-size: 14px;
+            }
+         }
       </style>
    </head>
    <body>
@@ -71,15 +86,18 @@
       <div class="desktop">
          <h1>Início de Computador</h1>
          <div class="icons-container">
-            <a href="#" class="icon">
+            <!-- Link para pasta -->
+            <a href="pasta.html" class="icon">
                <i class="fa fa-folder"></i> <!-- Ícone de pasta -->
                Pasta
             </a>
-            <a href="#" class="icon">
+            <!-- Link para configurações -->
+            <a href="configuracoes.html" class="icon">
                <i class="fa fa-cogs"></i> <!-- Ícone de configurações -->
                Configurações
             </a>
-            <a href="#" class="icon">
+            <!-- Link para usuário -->
+            <a href="usuario.html" class="icon">
                <i class="fa fa-user"></i> <!-- Ícone de usuário -->
                Usuário
             </a>
