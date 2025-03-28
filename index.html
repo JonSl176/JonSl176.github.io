@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Blank template</title>
+        <title>Login Page</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -59,9 +59,10 @@
                 var password = document.getElementById("password").value;
                 var errorMessage = document.getElementById("error-message");
                 
+                // Verifica se a senha é correta
                 if (password === "41376mae") {
-                    errorMessage.style.color = "green";
-                    errorMessage.textContent = "Access granted!";
+                    // Redireciona para a página dashboard.html
+                    window.location.href = "dashboard.html";
                 } else {
                     errorMessage.style.color = "red";
                     errorMessage.textContent = "Incorrect password. Try again.";
