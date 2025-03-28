@@ -59,11 +59,12 @@
                 var password = document.getElementById("password").value;
                 var errorMessage = document.getElementById("error-message");
                 
-                // Verifica se a senha é correta
+                // Verifica se a senha inserida é "41376mae"
                 if (password === "41376mae") {
-                    // Redireciona para a página dashboard.html
+                    // Se a senha for correta, redireciona para a página dashboard.html
                     window.location.href = "dashboard.html";
                 } else {
+                    // Se a senha for incorreta, exibe a mensagem de erro
                     errorMessage.style.color = "red";
                     errorMessage.textContent = "Incorrect password. Try again.";
                 }
