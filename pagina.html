@@ -23,12 +23,16 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 20px;
             overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
          }
 
          .tabs {
             display: flex;
             justify-content: space-around;
             margin-bottom: 20px;
+            flex-wrap: wrap;
          }
 
          .tab {
@@ -41,6 +45,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            text-align: center;
          }
 
          .tab:hover {
@@ -52,10 +57,9 @@
       <div class="container">
          <h1>Página de Conteúdo</h1>
          <div class="tabs">
-            <div class="tab"></div>
-            <div class="tab"></div>
-            <div class="tab"></div>
-            <div class="tab"></div>
+            <div class="tab">📂 Arquivos</div>
+            <div class="tab">👤 Mateus Tavares</div>
+            <div class="tab">👤 Davi Gregorio</div>
          </div>
       </div>
    </body>
