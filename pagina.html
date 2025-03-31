@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <meta charset="utf-8">
+      <title>Página de Conteúdo</title>
+      <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
+
+         .container {
+            background-color: #fff;
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow: auto;
+         }
+
+         .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+         }
+
+         .tab {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+         }
+
+         .tab:hover {
+            background-color: #bbb;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <h1>Página de Conteúdo</h1>
+         <div class="tabs">
+            <div class="tab"></div>
+            <div class="tab"></div>
+            <div class="tab"></div>
+            <div class="tab"></div>
+         </div>
+      </div>
+   </body>
+</html>
